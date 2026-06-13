@@ -10,8 +10,9 @@ private:
 
 public:
 
-	void StatusUpdate(int hp1,int attack1)
+	void StatusUpdate(char* name1, int hp1, int attack1)
 	{
+		strcpy_s(name, 10, name1);
 		hp = hp1;
 		attack = attack1;
 	}
@@ -29,11 +30,11 @@ public:
 int main()
 {
 	Character chara1;
-	chara1.StatusUpdate(53,25);
+	chara1.StatusUpdate("tarou", 53, 25);
 	chara1.PrintStatus(chara1);
 
 	Character chara2;
-	chara1.StatusUpdate( 532, 255);
+	chara1.StatusUpdate("jirou", 532, 255);
 	chara1.PrintStatus(chara2);
 }
 
