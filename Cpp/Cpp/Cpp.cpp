@@ -20,5 +20,6 @@ int main()
 	int sansyouValue = 0;
 	printf("入れ替え前の数値は&d,&dです。", pointValue, sansyouValue);
 	Swap(pointValue, sansyouValue);
+	return 0;
 }
 
