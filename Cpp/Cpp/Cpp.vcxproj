@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -123,7 +123,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AttackDie.cpp" />
+    <ClCompile Include="Character.cpp" />
     <ClCompile Include="Cpp.cpp" />
+    <ClCompile Include="DispResult.cpp" />
+    <ClCompile Include="Goblin.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="Turn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AttackDie.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="DispResult.h" />
+    <ClInclude Include="Goblin.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Slime.h" />
+    <ClInclude Include="Turn.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
